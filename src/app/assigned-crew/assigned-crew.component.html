@@ -1,46 +1,124 @@
 <div class="container">
 <div class="sidebar">
-  <a href=""><i class="pi pi-check"></i>hi</a>
-  <ul>
+  <ul class="sidebarul">
     <li><i class="pi pi-home icons"></i>Home</li>
     <li><i class="pi pi-wallet"></i>New Loan Request</li>
-    <li>My Crew Queue</li>
-    <li>Reports</li>
-    <li>Settings</li>
-    <li>Dashboard</li>
+    <li><i class="pi pi-slack"></i>My Crew Queue</li>
+    <li><i class="pi pi-chart-line"></i>Reports</li>
+    <li><i class="pi pi-cog"></i>Settings</li>
+    <li><i class="pi pi-microsoft"></i>Dashboard</li>
   </ul>
 </div>
 <div class="maincontent">
-  <div>
+  <div class="status">
     <div class="open">
-      <h2>open<span>(Current)</span></h2>
-      <div>
-        <div>
+      <div class="openc"><h2>open<span>(Current)</span></h2></div>
+      <div class="openr">
+        <div class="openr1">
+        <div class="round1"></div>
+        <div class="round2">
           <h6>You</h6>
           <h2>22</h2>
         </div>
-        <div>
+      </div>
+        <div class="openr1">
+          <div class="round1"></div>
+        <div class="round2">
           <h6>All</h6>
           <h2>185</h2>
         </div>
       </div>
+        </div>
+
     </div>
     <div class="Statistics">
-      <h2>Statistics<span>(This Week)</span></h2>
-      <div>
-        <h6>On Track</h6>
-        <h2>20</h2>
-        <progress max="10" value="10"></progress>
+      <div class="Statisticst"><h2>Statistics<span>(This Week)</span></h2></div>
+      <div class="Statisticsr">
+        <div class="Statistics1">
+          <div class="round4"></div>
+        <div class="round3">
+          <h6>On Track</h6>
+          <h2>20</h2>
+          <progress max="10" value="5"></progress>
+        </div>
       </div>
-      <div>
-        <h6>Delayed</h6>
-        <h2>2</h2>
-        <progress max="10" value="10"></progress>
+        <div class="Statistics1">
+          <div class="round6"></div>
+        <div class="round5">
+          <h6>Delayed</h6>
+          <h2>2</h2>
+          <progress max="10" value="5"></progress>
+        </div>
       </div>
-      <div>
-        <h6>Completed</h6>
-        <h2>50</h2>
-        <progress max="10" value="10"></progress>
+        <div class="Statistics1">
+          <div class="round8"></div>
+        <div class="round7">
+          <h6>Completed</h6>
+          <h2>50</h2>
+          <progress max="10" value="5"></progress>
+        </div>
+        </div>
+
+      </div>
+      </div>
+
+  </div>
+  <div class="assigned">
+    <h1>Assigned to me</h1>
+    <div class="rounda">3</div>
+    <h5>Results</h5>
+    <i class="pi pi-search"></i>
+    <input type="search" placeholder="Search">
+    <i class="pi pi-filter"></i>
+    <button class="btn1">Saved Views</button>
+    <button class="btn">Create</button>
+    <button class="btn">Export</button>
+  </div>
+  <div class="customer-brief-bluebox">
+    <div class="customer-brief-whitebox">
+      <img src="./assets/images1.jfif" alt="varghese" >
+      <div class="customer-brief-whitebox-items">
+        <h3 class="customer-brief-whitebox-item1">A Laxmi Narasimha</h3>
+        <p class="customer-brief-whitebox-item2">Female/42yrs</p>
+        <a href="#" class="customer-brief-whitebox-item3">more info +</a>
+      </div>
+    </div>
+    <div class="customer-brief-table-container-box">
+      <div class="customer-brief-table-container">
+        <table class="customer-brief-table">
+          <tr>
+            <td class="customer-brief-table-firstcol">Type</td>
+            <td>Vehicle Loan</td>
+          </tr>
+          <tr>
+            <td class="customer-brief-table-firstcol">Appl.No</td>
+            <td>VL-001201</td>
+          </tr>
+        </table>
+      </div>
+      <div class="customer-brief-table-container">
+        <table class="customer-brief-table">
+          <tr>
+            <td class="customer-brief-table-firstcol">Amount</td>
+            <td>50000</td>
+          </tr>
+          <tr>
+            <td class="customer-brief-table-firstcol">status</td>
+            <td style="color: rgb(90, 90, 253);">New</td>
+          </tr>
+        </table>
+      </div>
+      <div class="customer-brief-table-container">
+        <table>
+          <tr>
+            <td class="customer-brief-table-firstcol">Stage</td>
+            <td>Work Desk 05</td>
+          </tr>
+          <tr>
+            <td class="customer-brief-table-firstcol">Priority</td>
+            <td style="color: red;">High</td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>

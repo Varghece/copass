@@ -8,8 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AssignedCrewComponent } from './assigned-crew/assigned-crew.component';
 
-import { CheckboxModule } from 'primeng/checkbox';
-
 
 
 @NgModule({
@@ -23,7 +21,6 @@ import { CheckboxModule } from 'primeng/checkbox';
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    CheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
