@@ -270,91 +270,33 @@
     }
 }
 
-
-.customer-brief-bluebox{
+.customerlist{
+  background-color: orange;
+ table{
+   width: 100%;
+   border: 1px solid black;
+   th,td{
+    border: 1px solid black;
+   }
+ }
+ .customer-bluebox{
+  display: flex;
+  flex-direction: row;
   @include displays;
-  width: 96%;
+  width: 100%;
   height: 125px;
   background-color: $skyblue;
   border-radius: 25px;
   border-bottom: 1px solid $lightgray;
   margin-bottom: 2px;
   padding: 7px;
-  .customer-brief-whitebox{
-    width: 33%;
-    height: 70%;
-    border-radius: 50px;
-    img{
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      position: relative;
-      top:-8px;
-      z-index: 1;
-      }
-    .customer-brief-whitebox-items{
-      background-color: $white;
-      width:100%;
-      height:100%;
-      border-radius: 50px;
-      font-size: $smallfont;
-      font-weight: $mediumfont;
-      position: relative;
-      left: 0px;
-      top:-97px;
-      z-index: 0;
-      border-bottom: 1px solid $lightgray;
-      .customer-brief-whitebox-item1{
-        margin: 0px;
-        padding: 10px 10px 0px 0px;
-         margin-left: 100px;
-         color: $darkblue;
-      }
-      .customer-brief-whitebox-item2{
-        margin: 0px;
-        padding-top: 5px;
-         margin-left: 100px;
-      }
-      .customer-brief-whitebox-item3{
-        margin-right: 30px;
-        padding: 0px;
-        float: right;
-        text-decoration: none;
-        color: $blue;
-      }
-    }
-  }
-  .customer-brief-table-container-box{
-    width: 63%;
-    height: 80%;
-    font-size: $smallfont;
-    font-weight: $lightfont;
+  .customer-bluebox1{
+    width: 25%;
+   }
+   .customer-bluebox2{
+     width:75%;
     display: flex;
-    .customer-brief-table-container{
-      width: 33%;
-      height: 100%;
-      table{
-        margin-top: 6%;
-        padding: 0px;
-        width: 100%;
-        height: 70%;
-        text-align:start;
-        tr{
-          @include sizezero;
-          height: 25%;
-        }
-        td{
-          @include sizezero;
-          padding-left:10%;
-        }
-        .customer-brief-table-firstcol{
-          font-size: 15px;
-          font-weight: $thickfont;
-        }
-      }
-      .customer-brief-table{
-        border-right: 2px solid $lightgray;
-      }
-    }
-  }
-}
+    flex-direction: row;
+   }
+ }
+ }
