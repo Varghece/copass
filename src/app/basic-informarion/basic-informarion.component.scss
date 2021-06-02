@@ -1,0 +1,169 @@
+@import "src/styles.scss";
+.container{
+  margin-left: 30px;
+  width: 93%;
+  height: 560px;
+  overflow: auto;
+  font-size: $mediumsize;
+  font-weight: $thickfont;
+  // background-color: rgb(202, 236, 193);
+  button:hover{
+    cursor: pointer;
+  }
+  h2{
+    color: $darkblue;
+    // width:600px;
+    // height: 30px;
+    border-left: 3px solid $red;
+    padding-top: 0px;
+    padding-left: 20px;
+    margin-top:0px;
+  }
+  .customer-info{
+    padding: 25px ;
+    width: 100%;
+    min-height: 100px;
+    // background-color: rgb(236, 193, 193);
+    background-color: $white;
+    border: 1px solid $lightgray;
+    border-radius: 20px;
+    // margin-bottom: 30px;
+     .prime{
+       display: flex;
+       width: 100%;
+       height: 90%;
+      //  background-color: rgb(236, 235, 166);
+       .basic{
+        width: 75%;
+        height: 100%;
+      //  background-color: rgb(246, 249, 250);
+       table{
+        //  border: 1px solid black;
+         width: 85%;
+         td{
+          height: 60px;
+          font-size: 14px;
+          font-weight: $thickfont;
+          // border: 1px solid black;
+         }
+         input{
+           padding-left: 15px;
+          font-size: 14px;
+          font-weight: $thickfont;
+          width: 100%;
+          height: 40px;
+          border-radius: 25px;
+          border: 1px solid $lightgray ;
+          outline: none;
+         }
+       }
+       }
+       .imgpre{
+        width: 25%;
+        height: 100%;
+      //  background-color: rgb(121, 120, 91);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       .imgbox{
+        width: 89%;
+        img{
+          width: 100%;
+          height: 125px;
+          border-radius: 25px;
+        }
+       }
+       button{
+        @include sizezero;
+        text-align: start;
+        padding: 5px;
+            width:90%;
+            height: 35px;
+            border: none;
+            background-color: rgb(241, 241, 250);
+            border-left: 3px solid $darkblue;
+            margin-top: 5px;
+            // margin-left: 20px;
+            font-weight: $mediumfont;
+            font-size: $mediumsize;
+            color: $darkblue;
+            outline: none;
+        i{
+          margin-right: 5px;
+          float: right;
+          color: $blue;
+        }
+      }
+       }
+     }
+     .second{
+       display: flex;
+       flex-direction: row;
+       justify-content:space-around;
+       align-items: center;
+      font-size: $mediumsize;
+      font-weight: $mediumfont;
+      width: 80%;
+      height: 10%;
+      // background-color: rgb(210, 166, 236);
+      button{
+        margin-left: 50px;
+        font-size: $mediumsize;
+        width: 150px;
+       height: 40px;
+       border-radius: 25px;
+       border: 1px solid $darkblue;
+       background-color: $white;
+       outline: none;
+      }
+      .pi-pencil{
+        color: $darkblue;
+      }
+      .pi-trash{
+        color: $red;
+      }
+      progress{
+        margin-bottom:3px ;
+         -webkit-appearance: none;
+          width: 130px;
+          height: 7px;
+          overflow: hidden;
+          &::-webkit-progress-bar{
+            background:$gray ;
+            border-radius: 25px;
+          }
+          &::-webkit-progress-value{
+            background: $green;
+            border-radius: 25px;
+          }
+         }
+    }
+
+  }
+  .btns{
+    button{
+      margin: 20px 15px 15px 5px;
+      font-size: $mediumsize;
+      width: 110px;
+     height: 30px;
+     border-radius: 10px;
+     border: 1px solid $darkblue;
+     background-color: $white;
+     outline: none;
+    }
+    .sav{
+      color: $white ;
+      border: none;
+      background-color: $darkblue;
+    }
+    .compt{
+      color: $white;
+      border: none;
+      background-color: $green;
+    }
+  }
+
+}
+.container::-webkit-scrollbar {
+  display: none;
+}

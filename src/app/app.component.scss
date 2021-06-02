@@ -1,0 +1,18 @@
+@import "src/styles.scss";
+.container{
+  margin: 40px 40px 0px 40px;
+  padding: 0;
+  background-color: $white;
+  min-height: 690px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  box-shadow: 1px 0.9px 80px $lightgray;
+  font-family: $fontfamily;
+  font-size: $smallfont;
+  font-weight: $mediumfont;
+}
+.footer{
+  width: 100%;
+  background-color: $white;
+  height: 16px;
+}

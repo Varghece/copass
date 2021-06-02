@@ -4,6 +4,9 @@
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(630px, auto);
   font-family: $fontfamily ;
+  button:hover{
+    cursor: pointer;
+  }
   .sidebar{
     grid-column: 1 / 3;
     grid-row: 1 ;
@@ -11,7 +14,7 @@
     .sidebarul{
       @include sizezero;
       list-style-type: none;
-      margin-left: 20px;
+      // margin-left: 20px;
       margin-top: 20px;
       li{
             cursor: pointer;
@@ -26,12 +29,21 @@
               color: $gray;
             }
        }
+       li:hover{
+         color: $darkblue;
+         border-left: 3px solid $darkblue;
+         background-image: linear-gradient(to right, rgb(192, 189, 243), rgb(255, 255, 255));
+         i{
+          color: $darkblue;
+         }
+       }
     }
 
   }
   .maincontent{
     grid-column: 3 / 13 ;
     grid-row: 1;
+    margin-top: 15px;
     margin-left: 25px;
     width: 95%;
     .status{
@@ -118,6 +130,9 @@
          border-radius: 50%;
         background-color: rgb(216, 237, 255);
         border-left: 3px solid rgb(97, 177, 251);
+        h2,h6{
+          color: rgb(97, 177, 251);
+         }
         progress{
            -webkit-appearance: none;
             width: 70px;
@@ -153,6 +168,9 @@
          border-radius: 50%;
         background-color: rgb(255, 191, 191);
         border-left: 3px solid rgb(251, 61, 61);
+        h2,h6{
+          color: rgb(251, 61, 61);
+        }
         progress{
           -webkit-appearance: none;
            width: 70px;
@@ -188,6 +206,9 @@
          border-radius: 50%;
         background-color: rgb(188, 250, 188);
         border-left: 3px solid rgb(30, 187, 30);
+        h2,h6{
+         color: rgb(30, 187, 30);
+        }
         progress{
           -webkit-appearance: none;
            width: 70px;
@@ -271,12 +292,19 @@
 }
 
 .customerlist{
-  background-color: orange;
+  margin-top: 40px;
+  // background-color: orange;
  table{
    width: 100%;
-   border: 1px solid black;
+  //  border: 1px solid black;
    th,td{
-    border: 1px solid black;
+    // border: 1px solid black;
+   }
+   th{
+    //  text-align: left;
+    font-weight: $thickfont ;
+  font-size: $smallfont;
+     width: 12%;
    }
  }
  .customer-bluebox{
@@ -284,19 +312,121 @@
   flex-direction: row;
   @include displays;
   width: 100%;
-  height: 125px;
-  background-color: $skyblue;
+  height: 90px;
+  background-color: rgb(253, 253, 253);
   border-radius: 25px;
   border-bottom: 1px solid $lightgray;
   margin-bottom: 2px;
   padding: 7px;
+  font-weight: $mediumfont;
+  font-size: $smallfont;
   .customer-bluebox1{
     width: 25%;
+    // background-color: burlywood;
+    table{
+      text-align: center;
+    }
    }
    .customer-bluebox2{
      width:75%;
     display: flex;
     flex-direction: row;
+    // background-color: chartreuse;
+    // border: 1px solid black;
+    .divwidt{
+      // border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 17%;
+      button{
+        color:$white;
+        font-weight:$lightfont ;
+        font-size:smaller;
+        width: 70px;
+       height: 20px;
+       border-radius: 5px;
+       border: none;
+       background-color: rgb(35, 119, 228);
+       outline: none;
+      }
+    }
+    .divwidt3{
+      display:flex;
+      align-items: center;
+      // border: 1px solid black;
+      width: 17%;
+      progress{
+        -webkit-appearance: none;
+         width: 125px;
+         height:6px;
+         overflow: hidden;
+         &::-webkit-progress-bar{
+           background:rgb(217, 230, 248) ;
+           border-radius: 25px;
+         }
+         &::-webkit-progress-value{
+           background: rgb(35, 119, 228);
+           border-radius: 25px;
+         }
+        }
+      p{
+        @include sizezero;
+      }
+    }
+    .divwidt1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // border: 1px solid black;
+      width: 16%;
+    }
+    .divwidt2{
+      // border: 1px solid black;
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i{
+        font-weight:$thickestfont;
+        font-size:large;
+        color: orangered;
+      }
+      button{
+        color:$darkblue;
+       font-weight: $thickfont ;
+        font-size: small;
+       width: 90px;
+      height: 25px;
+      border-radius: 8px;
+      border: 1px solid $darkblue;
+      background-color: $white;
+      outline: none;
+     }
+    }
+    .divwidt4{
+      // border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 17%;
+      h5{
+        font-weight: $mediumfont;
+        font-size: $smallfont;
+        color: $red;
+      }
+    }
+
+    .assingne{
+      width: 30px;
+      height: 30px;
+      padding: 4px;
+      border-radius: 50%;
+      font-weight: $thickestfont;
+      font-size: $smallfont;
+      text-align: center;
+      background-color: $skyblue;
+    }
    }
  }
  }

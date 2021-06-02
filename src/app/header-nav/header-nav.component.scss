@@ -1,0 +1,79 @@
+@import "src/styles.scss";
+.header{
+  @include displays;
+  justify-content: space-between;
+  max-width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom: 1px solid $lightgray;
+  .logo{
+    width: 40%;
+    margin-bottom: 5px;
+    h1{
+      @include sizezero;
+      margin-left: 10px;
+      color: $red;
+    }
+    span{
+      color: $darkblue;
+    }
+    p{
+      @include sizezero;
+      margin-left: 10px;
+      font-size:xx-small;
+    }
+  }
+   .header-nav{
+     @include displays;
+     width: 40%;
+     .header-nav-branch-select{
+      padding: 10px 30px 10px 30px;
+      border-radius: 20px;
+      font-weight: $thickestfont ;
+      outline: none;
+      border: 1px solid $lightgray;
+    }
+    .header-nav-bell{
+      background-color: $white;
+      border-radius: 50%;
+      @include samewh1;
+      text-align: center;
+      box-shadow: 1px 0.9px 30px $lightgray;
+      i{
+        margin: 5px;
+      }
+      p{
+        width: 15px;
+        height: 15px;
+        background-color: $red;
+        color: $white;
+        border-radius: 50%;
+        font-size: smaller;
+        position: relative;
+        top: -40px;
+        left: 23px;
+
+      }
+    }
+    .header-nav-customer{
+      display:inline-flex;
+      align-items: center;
+      .header-nav-customer-firstletter{
+        background-color: $skyblue;
+        border-radius: 50%;
+        @include samewh1;
+        text-align: center;
+        h3{
+          margin: 3px;
+        }
+      }
+      .header-nav-customer-select{
+        padding: 10px 30px 10px 10px;
+        border-radius: 20px;
+        border-style: none;
+        font-weight: $thickestfont;
+        outline: none;
+      }
+    }
+  }
+}
