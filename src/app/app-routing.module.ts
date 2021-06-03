@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'crew', component: AssignedCrewComponent },
   // { path: 'new', component: NewCustomerComponent },
   { path: 'new', component: NewCustomerComponent, children: [
-    { path: '', redirectTo: 'basic',pathMatch: 'full' },
+    { path: '', redirectTo: 'basic',  pathMatch: 'full' },
     { path: 'basic', component: BasicInformarionComponent },
     { path: 'aadhar', component: AadharCardComponent },
     { path: 'pan', component: PancardComponent }

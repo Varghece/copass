@@ -8,8 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./assigned-crew.component.scss']
 })
 export class AssignedCrewComponent implements OnInit {
-@Output() public sendData = new EventEmitter();
   i = 1;
+@Output() sendData = new EventEmitter<number>();
+
   constructor( private router: Router) { }
 
   ngOnInit(): void {

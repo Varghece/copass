@@ -23,7 +23,7 @@ export class SideBarComponent implements OnInit {
   onclicklil(){
     this.side = false;
   }
-  sendData(value){
+  sendData(value: any){
     console.log(value);
   }
 }

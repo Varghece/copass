@@ -52,15 +52,18 @@
   .sidebarul{
     @include sizezero;
     list-style-type: none;
-    // margin-left: 20px;
+    // padding-left: 20px;
     margin-top: 20px;
     li{    display: flex;
           cursor: pointer;
-          padding: 15px 20px 15px 25px;
+          padding: 15px 20px 15px 35px;
           font-weight: $mediumfont;
           font-size: $smallfont;
           color:$gray;
-          p{
+          a{
+           text-decoration: none;
+           display: flex;
+           p{
             visibility: visible;
             margin: 0;
           }
@@ -70,6 +73,8 @@
             font-size: $mediumsize;
             color: $gray;
           }
+          }
+
      }
      li:hover{
        color: $darkblue;
