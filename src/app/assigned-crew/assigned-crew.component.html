@@ -1,15 +1,15 @@
 <!-- button no need -->
-<div class="container">
-<div class="sidebar">
+<!-- <div class="container"> -->
+<!-- <div [ngClass]="side?'sidebar':'sidebar1'">
   <ul class="sidebarul">
-    <li><i class="pi pi-home icons"></i>Home</li>
+    <li (click)="onclickli()"><i class="pi pi-home icons"></i><p>Home</p></li>
     <li><i class="pi pi-wallet"></i>New Loan Request</li>
     <li><i class="pi pi-slack"></i>My Crew Queue</li>
     <li><i class="pi pi-chart-line"></i>Reports</li>
     <li><i class="pi pi-cog"></i>Settings</li>
     <li><i class="pi pi-microsoft"></i>Dashboard</li>
   </ul>
-</div>
+</div> -->
 <div class="maincontent">
   <div class="status">
     <div class="open">
@@ -72,7 +72,7 @@
     <input  type="search" placeholder="Search">
     <i class="pi pi-filter"></i>
     <button class="btn1">Saved Views <i class="pi pi-chevron-down"></i></button>
-    <button class="btn">Create <i class="pi pi-plus"></i></button>
+    <button class="btn" (click)="onCreate()">Create <i class="pi pi-plus"></i></button>
     <button class="btn">Export <i class="pi pi-upload"></i></button>
   </div>
 
@@ -198,4 +198,4 @@
   </div>
 
 </div>
-</div>
+<!-- </div> -->

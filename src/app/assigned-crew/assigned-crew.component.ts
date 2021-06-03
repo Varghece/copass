@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-assigned-crew',
@@ -6,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./assigned-crew.component.scss']
 })
 export class AssignedCrewComponent implements OnInit {
-
-  constructor() { }
+@Output() public sendData = new EventEmitter();
+  i = 1;
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
   }
-
+  // onclickli(){
+  //   if (this.side === true){
+  //     this.side = false;
+  //   }
+  //   else{
+  //     this.side = true;
+  //   }
+  // }
+  onCreate(){
+    this.sendData.emit(this.i);
+    this.router.navigate(['/new']);
+  }
 }

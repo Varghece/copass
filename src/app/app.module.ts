@@ -12,6 +12,7 @@ import { BasicInformarionComponent } from './basic-informarion/basic-informarion
 import { NewCustomerComponent } from './new-customer/new-customer.component';
 import { PancardComponent } from './pancard/pancard.component';
 import { AadharCardComponent } from './aadhar-card/aadhar-card.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 
 
@@ -23,7 +24,8 @@ import { AadharCardComponent } from './aadhar-card/aadhar-card.component';
     BasicInformarionComponent,
     NewCustomerComponent,
     PancardComponent,
-    AadharCardComponent
+    AadharCardComponent,
+    SideBarComponent
   ],
   imports: [
     BrowserModule,

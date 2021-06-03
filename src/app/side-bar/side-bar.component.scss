@@ -1,0 +1,84 @@
+@import "src/styles.scss";
+.bodyy{
+  display: flex;
+}
+.main{
+  width: 100%;
+}
+.sidebar{
+  margin: 0;
+  padding: 0;
+   width:5%;
+  border-right: 1px solid $lightgray;
+  // background-color: chocolate;
+  .sidebarul{
+    @include sizezero;
+    list-style-type: none;
+    // margin-left: 20px;
+    margin-top: 20px;
+    li{    display: flex;
+          cursor: pointer;
+          padding: 15px 20px 15px 25px;
+          font-weight: $mediumfont;
+          font-size: $smallfont;
+          color:$gray;
+          p{
+            font-size: 1px;
+            visibility:hidden;
+            margin: 0;
+          }
+          i{
+            margin-right: 10px;
+            font-weight: $thickestfont;
+            font-size: $mediumsize;
+            color: $gray;
+          }
+     }
+     li:hover{
+       color: $darkblue;
+       border-left: 3px solid $darkblue;
+       background-image: linear-gradient(to right, rgb(192, 189, 243), rgb(255, 255, 255));
+       i{
+        color: $darkblue;
+       }
+     }
+  }
+
+}
+.sidebar1{
+  width:15%;
+  // background-color: rgb(181, 235, 181);
+  border-right: 1px solid $lightgray;
+  .sidebarul{
+    @include sizezero;
+    list-style-type: none;
+    // margin-left: 20px;
+    margin-top: 20px;
+    li{    display: flex;
+          cursor: pointer;
+          padding: 15px 20px 15px 25px;
+          font-weight: $mediumfont;
+          font-size: $smallfont;
+          color:$gray;
+          p{
+            visibility: visible;
+            margin: 0;
+          }
+          i{
+            margin-right: 10px;
+            font-weight: $thickestfont;
+            font-size: $mediumsize;
+            color: $gray;
+          }
+     }
+     li:hover{
+       color: $darkblue;
+       border-left: 3px solid $darkblue;
+       background-image: linear-gradient(to right, rgb(192, 189, 243), rgb(255, 255, 255));
+       i{
+        color: $darkblue;
+       }
+     }
+  }
+
+}

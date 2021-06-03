@@ -1,5 +1,5 @@
 <div class="body-container">
-  <div class="body-icon-navbar">
+  <!-- <div class="body-icon-navbar">
     <ul class="sidebarul">
       <li><i class="pi pi-home icons"></i></li>
       <li><i class="pi pi-wallet"></i></li>
@@ -8,7 +8,7 @@
       <li><i class="pi pi-cog"></i></li>
       <li><i class="pi pi-microsoft"></i></li>
     </ul>
-  </div>
+  </div> -->
   <div class="body-ul-navbar">
     <nav><ul class="body-ul-navbar-list">
       <li class="body-ul-navbar-list-bluebackground">Customer<i class="pi pi-check"></i></li>
@@ -34,10 +34,13 @@
       <li>Saved Views <i class="pi pi-angle-right"></i></li>
       <li>Create <i class="pi pi-angle-right"></i></li>
       <li>Customer <i class="pi pi-angle-right"></i></li>
-      <li style="color: darkblue;">Basic Information</li>
+      <li style="color: darkblue;"> <a routerLinkActive="active" routerLink="basic">Basic Information</a></li>
+      <li><a routerLinkActive="active" routerLink="aadhar">j</a></li>
+      <li><a routerLinkActive="active" routerLink="pan"></a></li>
     </ul></nav>
+    <router-outlet></router-outlet>
     <!-- <app-basic-informarion></app-basic-informarion> -->
     <!-- <app-aadhar-card></app-aadhar-card> -->
-    <app-pancard></app-pancard>
+    <!-- <app-pancard></app-pancard> -->
   </div>
 </div>
