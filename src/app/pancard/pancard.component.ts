@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-pancard',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PancardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router ,private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
-
+  previous(){
+    this.router.navigate(['../aadhar'], {relativeTo: this.route});
+  }
 }

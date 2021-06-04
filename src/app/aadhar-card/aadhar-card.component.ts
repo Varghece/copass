@@ -15,4 +15,7 @@ export class AadharCardComponent implements OnInit {
   onCreate(){
     this.router.navigate(['../pan'], {relativeTo: this.route});
   }
+  previous(){
+    this.router.navigate(['../basic'], {relativeTo: this.route});
+  }
 }

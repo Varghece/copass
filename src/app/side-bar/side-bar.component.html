@@ -1,17 +1,17 @@
-<div class="bodyy" (sendData)="sendData($event)">
+<div class="bodyy">
   <div [ngClass]="side?'sidebar':'sidebar1'">
     <ul class="sidebarul">
       <li><a><i class="pi pi-home icons"></i><p>Home</p></a></li>
       <li ><a routerLinkActive="active" routerLink="/new" (click)="onclickli()"><i class="pi pi-wallet"></i><p>Loan Request</p></a></li>
-      <li ><a routerLinkActive="active" routerLink="/crew" (click)="onclicklil()"><i class="pi pi-slack"></i><p>My Crew Queue</p></a></li>
+      <li ><a routerLinkActive="active" routerLink="/crew" [routerLinkActiveOptions]="{exact : true}" (click)="onclicklil()"><i class="pi pi-slack"></i><p>My Crew Queue</p></a></li>
       <li><a><i class="pi pi-chart-line"> </i><p>Reports</p></a></li>
       <li><a><i class="pi pi-cog"></i><p>Settings</p></a> </li>
       <li><a><i class="pi pi-microsoft"></i><p>Dashboard</p></a> </li>
     </ul>
   </div>
   <div class="main">
-    <router-outlet></router-outlet>
-    <!-- <app-assigned-crew></app-assigned-crew> -->
+    <router-outlet (sendData)='sendData($event)'></router-outlet>
+    <!-- <app-assigned-crew (sendData)='sendData($event)'></app-assigned-crew> -->
     <!-- <app-new-customer></app-new-customer> -->
   </div>
 </div>

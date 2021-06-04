@@ -46,7 +46,7 @@
 
 }
 .sidebar1{
-  width:15%;
+  width:16%;
   // background-color: rgb(181, 235, 181);
   border-right: 1px solid $lightgray;
   .sidebarul{
@@ -80,6 +80,10 @@
        color: $darkblue;
        border-left: 3px solid $darkblue;
        background-image: linear-gradient(to right, rgb(192, 189, 243), rgb(255, 255, 255));
+       a{p,i{
+        color: $darkblue;
+       }
+      }
        i{
         color: $darkblue;
        }
