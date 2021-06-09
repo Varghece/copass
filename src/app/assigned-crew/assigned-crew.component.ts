@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class AssignedCrewComponent implements OnInit {
 @Output() sendData = new EventEmitter();
 i = 1;
-
+vis = 1;
   constructor( private router: Router) { }
 
   ngOnInit(): void {
@@ -26,5 +26,13 @@ i = 1;
   onCreate(){
     this.sendData.emit(this.i);
     this.router.navigate(['/new']);
+  }
+  boxvisble(){
+    if (this.vis === 2){
+      this.vis = 1;
+    }
+    else{
+      this.vis = 2;
+    }
   }
 }

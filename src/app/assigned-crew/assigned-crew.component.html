@@ -1,15 +1,3 @@
-<!-- button no need -->
-<!-- <div class="container"> -->
-<!-- <div [ngClass]="side?'sidebar':'sidebar1'">
-  <ul class="sidebarul">
-    <li (click)="onclickli()"><i class="pi pi-home icons"></i><p>Home</p></li>
-    <li><i class="pi pi-wallet"></i>New Loan Request</li>
-    <li><i class="pi pi-slack"></i>My Crew Queue</li>
-    <li><i class="pi pi-chart-line"></i>Reports</li>
-    <li><i class="pi pi-cog"></i>Settings</li>
-    <li><i class="pi pi-microsoft"></i>Dashboard</li>
-  </ul>
-</div> -->
 <div class="maincontent">
   <div class="status">
     <div class="open">
@@ -18,14 +6,14 @@
         <div class="openr1">
         <div class="round1"></div>
         <div class="round2">
-          <h6>You</h6>
+          <h5>You</h5>
           <h2>22</h2>
         </div>
       </div>
         <div class="openr1">
           <div class="round1"></div>
         <div class="round2">
-          <h6>All</h6>
+          <h5>All</h5>
           <h2>185</h2>
         </div>
       </div>
@@ -38,23 +26,23 @@
         <div class="Statistics1">
           <div class="round4"></div>
         <div class="round3">
-          <h6>On Track</h6>
+          <h5>On Track</h5>
           <h2>20</h2>
-          <progress max="10" value="5"></progress>
+          <progress max="10" value="6"></progress>
         </div>
       </div>
         <div class="Statistics1">
           <div class="round6"></div>
         <div class="round5">
-          <h6>Delayed</h6>
+          <h5>Delayed</h5>
           <h2>2</h2>
-          <progress max="10" value="5"></progress>
+          <progress max="10" value="8"></progress>
         </div>
       </div>
         <div class="Statistics1">
           <div class="round8"></div>
         <div class="round7">
-          <h6>Completed</h6>
+          <h5>Completed</h5>
           <h2>50</h2>
           <progress max="10" value="5"></progress>
         </div>
@@ -64,14 +52,28 @@
       </div>
 
   </div>
+
   <div class="assigned">
     <h1>Assigned to me</h1>
-    <div class="rounda">3</div>
-    <h5>Results</h5>
-    <i class="pi pi-search"></i>
-    <input  type="search" placeholder="Search">
-    <i class="pi pi-filter"></i>
-    <button class="btn1">Saved Views <i class="pi pi-chevron-down"></i></button>
+    <div class="bundle">
+      <div class="rounda">3</div>
+      <h4>Results</h4>
+    </div>
+    <div class="bundles">
+      <i class="pi pi-search"></i>
+      <input  type="search" placeholder="Search">
+    </div>
+    <button class="btnf"><i class="pi pi-filter"></i></button>
+    <button class="btn1" (click)="boxvisble()">Saved Views <i class="pi pi-chevron-down"></i></button>
+      <div class="uls visbl" [ngClass]="vis === 2?'visbl':'hides'">
+        <button (click)="boxvisble()"><i class="pi pi-replay"></i></button>
+        <ul>
+          <li>Queue</li>
+          <li>Assigned to me</li>
+          <li>Over Due</li>
+          <li>Recently Completed</li>
+        </ul>
+      </div>
     <button class="btn" (click)="onCreate()">Create <i class="pi pi-plus"></i></button>
     <button class="btn">Export <i class="pi pi-upload"></i></button>
   </div>
@@ -81,9 +83,9 @@
       <tr>
         <th>Name</th>
         <th>Type</th>
-        <th>Asignees</th>
-        <th>Task Completed</th>
-        <th>Status</th>
+        <th class="asista">Asignees</th>
+        <th class="task">Task Completed</th>
+        <th class="asista">Status</th>
         <th>Tracking</th>
         <th></th>
         <th></th>
@@ -91,11 +93,39 @@
       <tr>
         <td colspan="8">
           <div class="customer-bluebox">
-            <div class="customer-bluebox1">
+            <div class="customer-blueboxed">
               <table>
                 <tr>
                   <td><a href="#">A Laxmi Bai</a></td>
                   <td>Vehicle Loan</td>
+                  <td rowspan="2">
+                    <div class="divwidt1">
+                    <div class="assingne">JD</div>
+                    <p>10 mts.ago</p>
+                    </div>
+                  </td>
+                  <td rowspan="2" class="pro">
+                    <div class="divwidt3">
+                      <progress max="10" value="8"></progress>
+                      <p>9/11</p>
+                    </div>
+                  </td>
+                  <td rowspan="2">
+                    <div class="divwidt4">
+                      <h5>Referback</h5>
+                    </div>
+                  </td>
+                  <td rowspan="2">
+                    <div class="divwidt">
+                      <div class="ontrack">On Track</div>
+                    </div>
+                  </td>
+                  <td rowspan="2" class="lastcol">
+                    <div class="divwidt2">
+                      <i class="pi pi-arrow-right"></i>
+                      <button>View/Edit</button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>50000.00</td>
@@ -103,33 +133,41 @@
                 </tr>
               </table>
             </div>
-            <div class="customer-bluebox2">
-              <div class="divwidt1">
-                <div class="assingne">JD</div>
-              </div>
-              <div class="divwidt3">
-                <progress max="10" value="8"></progress>
-                <p>9/11</p>
-              </div>
-              <div class="divwidt4">
-                <h5>Referback</h5>
-              </div>
-              <div class="divwidt">
-                <button>On track</button>
-              </div>
-              <div class="divwidt2">
-                <i class="pi pi-arrow-right"></i>
-                <button>View/Edit</button>
-              </div>
-
-            </div>
           </div>
           <div class="customer-bluebox">
-            <div class="customer-bluebox1">
+            <div class="customer-blueboxed">
               <table>
                 <tr>
                   <td><a href="#">Mahesh</a> </td>
                   <td>Personal Loan</td>
+                  <td rowspan="2">
+                    <div class="divwidt1">
+                    <div class="assingne">JD</div>
+                    <p>12 mts.ago</p>
+                    </div>
+                  </td>
+                  <td rowspan="2" class="pro">
+                    <div class="divwidt3">
+                      <progress max="10" value="8"></progress>
+                      <p>9/11</p>
+                    </div>
+                  </td>
+                  <td rowspan="2">
+                    <div class="divwidt4">
+                      <h5 class="newc">New</h5>
+                    </div>
+                  </td>
+                  <td rowspan="2">
+                    <div class="divwidt">
+                      <div class="ontrack">On Track</div>
+                    </div>
+                  </td>
+                  <td rowspan="2" class="lastcol">
+                    <div class="divwidt2">
+                      <i class="pi pi-arrow-up"></i>
+                      <button>View/Edit</button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>100000.00</td>
@@ -137,33 +175,41 @@
                 </tr>
               </table>
             </div>
-            <div class="customer-bluebox2">
-              <div class="divwidt1">
-                <div class="assingne">JD</div>
-              </div>
-              <div class="divwidt3">
-                <progress max="10" value="8"></progress>
-                <p>9/11</p>
-              </div>
-              <div class="divwidt4">
-                <h5>New</h5>
-              </div>
-              <div class="divwidt">
-                <button>On track</button>
-              </div>
-              <div class="divwidt2">
-                <i class="pi pi-arrow-right"></i>
-                <button>View/Edit</button>
-              </div>
-
-            </div>
           </div>
           <div class="customer-bluebox">
-            <div class="customer-bluebox1">
+            <div class="customer-blueboxed">
               <table>
                 <tr>
                   <td><a href="#">Bevin</a></td>
                   <td>Vehicle Loan</td>
+                  <td rowspan="2">
+                    <div class="divwidt1">
+                    <div class="assingne">JD</div>
+                    <p>1 day ago</p>
+                    </div>
+                  </td>
+                  <td rowspan="2" class="pro">
+                    <div class="divwidt6">
+                      <progress max="10" value="8"></progress>
+                      <p>9/11</p>
+                    </div>
+                  </td>
+                  <td rowspan="2">
+                    <div class="divwidt4">
+                      <h5 class="newc">New</h5>
+                    </div>
+                  </td>
+                  <td rowspan="2">
+                    <div class="divwidt">
+                      <div class="delay">Delayed</div>
+                    </div>
+                  </td>
+                  <td rowspan="2" class="lastcol">
+                    <div class="divwidt2">
+                      <i class="pi pi-arrow-down"></i>
+                      <button>View/Edit</button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>50000.00</td>
@@ -171,31 +217,4 @@
                 </tr>
               </table>
             </div>
-            <div class="customer-bluebox2">
-              <div class="divwidt1">
-                <div class="assingne">JD</div>
-              </div>
-              <div class="divwidt3">
-                <progress max="10" value="8"></progress>
-                <p>9/11</p>
-              </div>
-              <div class="divwidt4">
-                <h5>New</h5>
-              </div>
-              <div class="divwidt">
-                <button>Delayed</button>
-              </div>
-              <div class="divwidt2">
-                <i class="pi pi-arrow-right"></i>
-                <button>View/Edit</button>
-              </div>
-
-            </div>
           </div>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-</div>
-<!-- </div> -->
