@@ -1,220 +1,152 @@
 <div class="maincontent">
-  <div class="status">
-    <div class="open">
-      <div class="openc"><h2>open<span>(Current)</span></h2></div>
-      <div class="openr">
-        <div class="openr1">
-        <div class="round1"></div>
-        <div class="round2">
-          <h5>You</h5>
-          <h2>22</h2>
-        </div>
-      </div>
-        <div class="openr1">
-          <div class="round1"></div>
-        <div class="round2">
-          <h5>All</h5>
-          <h2>185</h2>
-        </div>
-      </div>
-        </div>
+     <div class="status">
+            <div class="open">
+                  <div class="openc"><h2>open<span>(Current)</span></h2></div>
+                  <div class="openr">
+                    <div class="openr1">
+                    <div class="round1"></div>
+                    <div class="round2">
+                      <h5>You</h5>
+                      <h2>22</h2>
+                    </div>
+                    </div>
+                    <div class="openr1">
+                      <div class="round1"></div>
+                      <div class="round2">
+                      <h5>All</h5>
+                      <h2>185</h2>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="Statistics">
+              <div class="Statisticst"><h2>Statistics<span>(This Week)</span></h2></div>
+              <div class="Statisticsr">
+                <div class="Statistics1">
+                  <div class="round4"></div>
+                <div class="round3">
+                  <h5>On Track</h5>
+                  <h2>20</h2>
+                  <progress max="10" value="6"></progress>
+                </div>
+              </div>
+                <div class="Statistics1">
+                  <div class="round6"></div>
+                <div class="round5">
+                  <h5>Delayed</h5>
+                  <h2>2</h2>
+                  <progress max="10" value="8"></progress>
+                </div>
+              </div>
+                <div class="Statistics1">
+                  <div class="round8"></div>
+                <div class="round7">
+                  <h5>Completed</h5>
+                  <h2>50</h2>
+                  <progress max="10" value="5"></progress>
+                </div>
+                </div>
+              </div>
+           </div>
+     </div>
+   <!-- second -->
+      <div class="assigned">
+           <h1> {{name}}</h1>
+            <div class="bundle">
+              <div class="rounda">3</div>
+              <h4>Results</h4>
+            </div>
+            <div class="bundles">
+              <i class="pi pi-search"></i>
+              <input  type="search" placeholder="Search">
+            </div>
+            <div class="btng">
+              <div>
+                <button class="btnf" (click)="boxvisbled()"><i class="pi pi-filter"></i></button>
+                <div class="filter" [ngClass]="vif === 2?'visbl':'hides'">
+                  <div class="fbox">
+                    <div class="fbox1">
+                      <label for="">Name</label>
+                      <input type="text">
+                    </div>
+                    <div class="fbox2">
+                      <label for="">Amount</label>
+                      <select name=" " class="header-nav-branch-select"></select>
+                    </div>
+                    <div class="fbox3">
+                      <label for="">Type of Loan</label>
+                      <select name=" " class="header-nav-branch-select"></select>
+                    </div>
+                  </div>
+                  <div class="fbox">
+                    <div class="fbox1">
+                      <label for="">Appl.No</label>
+                      <input type="text">
+                    </div>
+                    <div class="fbox5">
+                      <label for="">Asignees</label>
+                      <select name=" " class="header-nav-branch-select"></select>
+                    </div>
+                    <div class="fbox4">
+                      <label for="">Task Completed</label>
+                      <select name=" " class="header-nav-branch-select"></select>
+                    </div>
+                  </div>
+                  <div class="fbox">
+                    <div class="fbox6">
+                      <label for="">Status</label>
+                      <select name=" " class="header-nav-branch-select"></select>
+                    </div>
+                    <div class="fbox6 marg">
+                      <label for="">Tracking</label>
+                      <select name=" " class="header-nav-branch-select"></select>
+                    </div>
+                  </div>
+                  <div class="searchg">
+                    <button class="compt">Search</button>
+                  <button class="sav">Save</button>
+                  <div class="bundls">
+                    <div class="rounda">5</div>
+                    <h4>Filters</h4>
+                  </div>
+                  </div>
 
-    </div>
-    <div class="Statistics">
-      <div class="Statisticst"><h2>Statistics<span>(This Week)</span></h2></div>
-      <div class="Statisticsr">
-        <div class="Statistics1">
-          <div class="round4"></div>
-        <div class="round3">
-          <h5>On Track</h5>
-          <h2>20</h2>
-          <progress max="10" value="6"></progress>
-        </div>
+                </div>
+              </div>
+              <button class="btn1" (click)="boxvisble()">Saved Views <i class="pi pi-chevron-down"></i></button>
+              <div class="uls" [ngClass]="vis === 2?'visbl':'hides'">
+                <button (click)="boxvisble()"><i class="pi pi-replay"></i></button>
+                <ul>
+                  <li>Queue</li>
+                  <li (click)="select(5)"><a routerLinkActive="active" routerLink="assign">Assigned to me</a></li>
+                  <li>Over Due</li>
+                  <li (click)="select(6)"><a routerLinkActive="active" routerLink="recent">Recently Completed</a></li>
+                </ul>
+              </div>
+            <button class="btn" (click)="onCreate()">Create <i class="pi pi-plus"></i></button>
+            <button class="btn">Export <i class="pi pi-upload"></i></button>
+          </div>
       </div>
-        <div class="Statistics1">
-          <div class="round6"></div>
-        <div class="round5">
-          <h5>Delayed</h5>
-          <h2>2</h2>
-          <progress max="10" value="8"></progress>
-        </div>
-      </div>
-        <div class="Statistics1">
-          <div class="round8"></div>
-        <div class="round7">
-          <h5>Completed</h5>
-          <h2>50</h2>
-          <progress max="10" value="5"></progress>
-        </div>
-        </div>
-
-      </div>
-      </div>
-
-  </div>
-
-  <div class="assigned">
-    <h1>Assigned to me</h1>
-    <div class="bundle">
-      <div class="rounda">3</div>
-      <h4>Results</h4>
-    </div>
-    <div class="bundles">
-      <i class="pi pi-search"></i>
-      <input  type="search" placeholder="Search">
-    </div>
-    <button class="btnf"><i class="pi pi-filter"></i></button>
-    <button class="btn1" (click)="boxvisble()">Saved Views <i class="pi pi-chevron-down"></i></button>
-      <div class="uls visbl" [ngClass]="vis === 2?'visbl':'hides'">
-        <button (click)="boxvisble()"><i class="pi pi-replay"></i></button>
-        <ul>
-          <li>Queue</li>
-          <li>Assigned to me</li>
-          <li>Over Due</li>
-          <li>Recently Completed</li>
-        </ul>
-      </div>
-    <button class="btn" (click)="onCreate()">Create <i class="pi pi-plus"></i></button>
-    <button class="btn">Export <i class="pi pi-upload"></i></button>
-  </div>
-
+<!-- third -->
   <div class="customerlist">
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th class="asista">Asignees</th>
-        <th class="task">Task Completed</th>
-        <th class="asista">Status</th>
-        <th>Tracking</th>
-        <th></th>
-        <th></th>
-      </tr>
+      <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th class="asista">Asignees</th>
+                  <th class="task">Task Completed</th>
+                  <th class="asista">Status</th>
+                  <th>Tracking</th>
+                  <th></th>
+                  <th></th>
+                </tr>
       <tr>
         <td colspan="8">
-          <div class="customer-bluebox">
-            <div class="customer-blueboxed">
-              <table>
-                <tr>
-                  <td><a href="#">A Laxmi Bai</a></td>
-                  <td>Vehicle Loan</td>
-                  <td rowspan="2">
-                    <div class="divwidt1">
-                    <div class="assingne">JD</div>
-                    <p>10 mts.ago</p>
-                    </div>
-                  </td>
-                  <td rowspan="2" class="pro">
-                    <div class="divwidt3">
-                      <progress max="10" value="8"></progress>
-                      <p>9/11</p>
-                    </div>
-                  </td>
-                  <td rowspan="2">
-                    <div class="divwidt4">
-                      <h5>Referback</h5>
-                    </div>
-                  </td>
-                  <td rowspan="2">
-                    <div class="divwidt">
-                      <div class="ontrack">On Track</div>
-                    </div>
-                  </td>
-                  <td rowspan="2" class="lastcol">
-                    <div class="divwidt2">
-                      <i class="pi pi-arrow-right"></i>
-                      <button>View/Edit</button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>50000.00</td>
-                  <td>VL-001254</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="customer-bluebox">
-            <div class="customer-blueboxed">
-              <table>
-                <tr>
-                  <td><a href="#">Mahesh</a> </td>
-                  <td>Personal Loan</td>
-                  <td rowspan="2">
-                    <div class="divwidt1">
-                    <div class="assingne">JD</div>
-                    <p>12 mts.ago</p>
-                    </div>
-                  </td>
-                  <td rowspan="2" class="pro">
-                    <div class="divwidt3">
-                      <progress max="10" value="8"></progress>
-                      <p>9/11</p>
-                    </div>
-                  </td>
-                  <td rowspan="2">
-                    <div class="divwidt4">
-                      <h5 class="newc">New</h5>
-                    </div>
-                  </td>
-                  <td rowspan="2">
-                    <div class="divwidt">
-                      <div class="ontrack">On Track</div>
-                    </div>
-                  </td>
-                  <td rowspan="2" class="lastcol">
-                    <div class="divwidt2">
-                      <i class="pi pi-arrow-up"></i>
-                      <button>View/Edit</button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>100000.00</td>
-                  <td>PL-008354</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="customer-bluebox">
-            <div class="customer-blueboxed">
-              <table>
-                <tr>
-                  <td><a href="#">Bevin</a></td>
-                  <td>Vehicle Loan</td>
-                  <td rowspan="2">
-                    <div class="divwidt1">
-                    <div class="assingne">JD</div>
-                    <p>1 day ago</p>
-                    </div>
-                  </td>
-                  <td rowspan="2" class="pro">
-                    <div class="divwidt6">
-                      <progress max="10" value="8"></progress>
-                      <p>9/11</p>
-                    </div>
-                  </td>
-                  <td rowspan="2">
-                    <div class="divwidt4">
-                      <h5 class="newc">New</h5>
-                    </div>
-                  </td>
-                  <td rowspan="2">
-                    <div class="divwidt">
-                      <div class="delay">Delayed</div>
-                    </div>
-                  </td>
-                  <td rowspan="2" class="lastcol">
-                    <div class="divwidt2">
-                      <i class="pi pi-arrow-down"></i>
-                      <button>View/Edit</button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>50000.00</td>
-                  <td>VL-005654</td>
-                </tr>
-              </table>
-            </div>
-          </div>
+          <router-outlet></router-outlet>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+

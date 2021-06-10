@@ -13,6 +13,8 @@ import { NewCustomerComponent } from './new-customer/new-customer.component';
 import { PancardComponent } from './pancard/pancard.component';
 import { AadharCardComponent } from './aadhar-card/aadhar-card.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { RecentlycompletedComponent } from './assigned-crew/recentlycompleted/recentlycompleted.component';
+import { AssignedtoMeComponent } from './assigned-crew/assignedto-me/assignedto-me.component';
 
 
 
@@ -25,7 +27,9 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     NewCustomerComponent,
     PancardComponent,
     AadharCardComponent,
-    SideBarComponent
+    SideBarComponent,
+    RecentlycompletedComponent,
+    AssignedtoMeComponent
   ],
   imports: [
     BrowserModule,

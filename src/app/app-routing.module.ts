@@ -1,3 +1,5 @@
+import { RecentlycompletedComponent } from './assigned-crew/recentlycompleted/recentlycompleted.component';
+import { AssignedtoMeComponent } from './assigned-crew/assignedto-me/assignedto-me.component';
 import { PancardComponent } from './pancard/pancard.component';
 import { AadharCardComponent } from './aadhar-card/aadhar-card.component';
 import { BasicInformarionComponent } from './basic-informarion/basic-informarion.component';
@@ -8,7 +10,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'crew', pathMatch: 'full'},
-  { path: 'crew', component: AssignedCrewComponent },
+  { path: 'crew', component: AssignedCrewComponent, children: [
+    { path: '', redirectTo: 'assign',  pathMatch: 'full' },
+    {path: 'assign', component: AssignedtoMeComponent},
+    {path: 'recent', component: RecentlycompletedComponent}
+  ] },
   // { path: 'new', component: NewCustomerComponent },
   { path: 'new', component: NewCustomerComponent, children: [
     { path: '', redirectTo: 'basic',  pathMatch: 'full' },

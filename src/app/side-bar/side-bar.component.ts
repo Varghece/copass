@@ -23,7 +23,14 @@ export class SideBarComponent implements OnInit {
   onclicklil(){
     this.side = false;
   }
-  sendData(value: any){
-    console.log(value);
+  onActivate(componentReference){
+    console.log(componentReference);
+    componentReference.anyFunction();
+    componentReference.sendData.subscribe((data) =>{
+     console.log(data);
+     if (data === 1){
+      this.side = true;
+     }
+    });
+    }
   }
-}
