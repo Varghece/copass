@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { EventServiceService } from '../event-service.service';
 
 
 @Component({
@@ -8,20 +9,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./assigned-crew.component.scss']
 })
 export class AssignedCrewComponent implements OnInit {
-@Output() sendData = new EventEmitter();
-i = 1;
 vis = 1;
 vif = 1;
 name = 'Assigned to me';
-  constructor( private router: Router) { }
+  constructor( private router: Router, private eventService: EventServiceService) { }
 
   ngOnInit(): void {
   }
-  anyFunction(){
-    console.log('called from parent')
-  }
   onCreate(){
-    this.sendData.emit(this.i);
+    // this.eventService.activated.emit(true);
+    this.eventService.activated.next(true);
     this.router.navigate(['/new']);
   }
   boxvisble(){

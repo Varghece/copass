@@ -27,20 +27,27 @@
             visibility:hidden;
             margin: 0;
           }
-          i{
+          svg{
             margin-right: 10px;
-            font-weight: $thickestfont;
-            font-size: $mediumsize;
-            color: $gray;
+            width:16px;
           }
+          // i{
+          //   margin-right: 10px;
+          //   font-weight: $thickestfont;
+          //   font-size: $mediumsize;
+          //   color: $gray;
+          // }
      }
      li:hover{
        color: $darkblue;
        border-left: 3px solid $darkblue;
        background-image: linear-gradient(to right, rgb(192, 189, 243), rgb(255, 255, 255));
-       i{
-        color: $darkblue;
-       }
+      //  i{
+      //   color: $darkblue;
+      //  }
+      #iconfinder_home_126572 ,#Path_236,#Path_237,#Path_238{
+        fill: $darkblue;
+     }
      }
   }
 
@@ -67,12 +74,16 @@
             visibility: visible;
             margin: 0;
           }
-          i{
+          svg{
             margin-right: 10px;
-            font-weight: $thickestfont;
-            font-size: $mediumsize;
-            color: $gray;
+            width:16px;
           }
+          // i{
+          //   margin-right: 10px;
+          //   font-weight: $thickestfont;
+          //   font-size: $mediumsize;
+          //   color: $gray;
+          // }
           }
 
      }

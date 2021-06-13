@@ -129,18 +129,28 @@
       display: flex;
       justify-content:flex-end;
       align-items: center;
-      i{
+      svg{
         margin-right: 20px;
-        font-weight:$thickestfont;
-        font-size:large;
-        color: orangered;
+        width: 13px;
       }
-      .pi-arrow-down{
-        color: green;
+      .s{
+        svg{
+          margin-right: 20px;
+          width: 19px;
+        }
       }
-      .pi-arrow-up{
-        color: red;
-      }
+      // i{
+      //   margin-right: 20px;
+      //   font-weight:$thickestfont;
+      //   font-size:large;
+      //   color: orangered;
+      // }
+      // .pi-arrow-down{
+      //   color: green;
+      // }
+      // .pi-arrow-up{
+      //   color: red;
+      // }
       button{
         color:$darkblue;
        font-weight: $thickfont ;
