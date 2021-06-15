@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EventServiceService } from './../../event-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recentlycompleted',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecentlycompletedComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private eventService: EventServiceService) { }
 
   ngOnInit(): void {
   }
-
+  onClick(){
+    this.router.navigate(['/view']);
+    this.eventService.activated.next(true);
+  }
 }

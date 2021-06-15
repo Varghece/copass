@@ -15,6 +15,8 @@ import { AadharCardComponent } from './aadhar-card/aadhar-card.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { RecentlycompletedComponent } from './assigned-crew/recentlycompleted/recentlycompleted.component';
 import { AssignedtoMeComponent } from './assigned-crew/assignedto-me/assignedto-me.component';
+import { CreditDisbAuthComponent } from './credit-disb-auth/credit-disb-auth.component';
+import { ViewEditComponent } from './view-edit/view-edit.component';
 
 
 
@@ -29,7 +31,9 @@ import { AssignedtoMeComponent } from './assigned-crew/assignedto-me/assignedto-
     AadharCardComponent,
     SideBarComponent,
     RecentlycompletedComponent,
-    AssignedtoMeComponent
+    AssignedtoMeComponent,
+    CreditDisbAuthComponent,
+    ViewEditComponent
   ],
   imports: [
     BrowserModule,

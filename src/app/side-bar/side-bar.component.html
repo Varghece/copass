@@ -44,9 +44,10 @@
         <path id="Path_248" data-name="Path 248" d="M284.856,341.332h-6.1a1.425,1.425,0,0,0-1.423,1.423v3.66a1.425,1.425,0,0,0,1.423,1.423h6.1a1.425,1.425,0,0,0,1.423-1.423v-3.66A1.425,1.425,0,0,0,284.856,341.332Zm0,0" transform="translate(-266.759 -328.319)" fill="#acadb2"/>
         <path id="Path_249" data-name="Path 249" d="M284.856,0h-6.1a1.425,1.425,0,0,0-1.423,1.423v8.54a1.425,1.425,0,0,0,1.423,1.423h6.1a1.425,1.425,0,0,0,1.423-1.423V1.423A1.425,1.425,0,0,0,284.856,0Zm0,0" transform="translate(-266.759)" fill="#acadb2"/>
       </svg><p>Dashboard</p></a> </li>
+      <li><a routerLinkActive="active" routerLink="/view"></a></li>
     </ul>
   </div>
-  <div class="main">
+  <div [ngClass]="side?'main':'main1'">
     <router-outlet></router-outlet>
     <!-- <app-assigned-crew (sendData)='sendData($event)'></app-assigned-crew> -->
     <!-- <app-new-customer></app-new-customer> -->

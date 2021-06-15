@@ -1,3 +1,4 @@
+import { ViewEditComponent } from './view-edit/view-edit.component';
 import { RecentlycompletedComponent } from './assigned-crew/recentlycompleted/recentlycompleted.component';
 import { AssignedtoMeComponent } from './assigned-crew/assignedto-me/assignedto-me.component';
 import { PancardComponent } from './pancard/pancard.component';
@@ -21,7 +22,8 @@ const routes: Routes = [
     { path: 'basic', component: BasicInformarionComponent },
     { path: 'aadhar', component: AadharCardComponent },
     { path: 'pan', component: PancardComponent }
-  ] }
+  ] },
+  { path: 'view', component: ViewEditComponent}
 ];
 
 @NgModule({

@@ -3,7 +3,7 @@
   display: flex;
 }
 .main{
-  width: 100%;
+  width: 95%;
 }
 .sidebar{
   margin: 0;
@@ -15,7 +15,7 @@
     @include sizezero;
     list-style-type: none;
     // margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     li{    display: flex;
           cursor: pointer;
           padding: 15px 20px 15px 25px;
@@ -40,27 +40,32 @@
      }
      li:hover{
        color: $darkblue;
-       border-left: 3px solid $darkblue;
+       border-left: 3px solid #191992;
        background-image: linear-gradient(to right, rgb(192, 189, 243), rgb(255, 255, 255));
       //  i{
       //   color: $darkblue;
       //  }
-      #iconfinder_home_126572 ,#Path_236,#Path_237,#Path_238{
+      #iconfinder_home_126572 ,#Path_236,#Path_237,#Path_238,
+      #iconfinder_Movies_and_Entertainment_movie_premiere_queue_film_6611441,
+      #Path_244,#Path_245,#Path_391,#Path_246,#Path_249,#Path_247,#Path_248{
         fill: $darkblue;
      }
      }
   }
 
 }
+.main1{
+  width: 86%;
+}
 .sidebar1{
-  width:16%;
+  width:14%;
   // background-color: rgb(181, 235, 181);
   border-right: 1px solid $lightgray;
   .sidebarul{
     @include sizezero;
     list-style-type: none;
     // padding-left: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     li{    display: flex;
           cursor: pointer;
           padding: 15px 20px 15px 35px;
@@ -70,6 +75,7 @@
           a{
            text-decoration: none;
            display: flex;
+           color: $gray;
            p{
             visibility: visible;
             margin: 0;
@@ -89,15 +95,19 @@
      }
      li:hover{
        color: $darkblue;
-       border-left: 3px solid $darkblue;
+       border-left: 3px solid #191992;
        background-image: linear-gradient(to right, rgb(192, 189, 243), rgb(255, 255, 255));
-       a{p,i{
+       p{
         color: $darkblue;
        }
-      }
-       i{
-        color: $darkblue;
-       }
+      #iconfinder_home_126572 ,#Path_236,#Path_237,#Path_238,
+      #iconfinder_Movies_and_Entertainment_movie_premiere_queue_film_6611441,
+      #Path_244,#Path_245,#Path_391,#Path_246,#Path_249,#Path_247,#Path_248{
+        fill: $darkblue;
+     }
+      //  i{
+      //   color: $darkblue;
+      //  }
      }
   }
 

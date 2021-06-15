@@ -8,21 +8,28 @@
   border-bottom: 1px solid $lightgray;
   // background-color: darkgoldenrod;
   .logo{
+    padding: 10px;
     width: 40%;
-    margin-bottom: 5px;
-    h1{
-      @include sizezero;
-      margin-left: 10px;
-      color: $red;
+    height: 60px;
+    img{
+      width: 120px;
+      margin-left: 15px
     }
-    span{
-      color: $darkblue;
-    }
-    p{
-      @include sizezero;
-      margin-left: 10px;
-      font-size:xx-small;
-    }
+    // background-color: aqua
+    // margin-bottom: 5px;
+    // h1{
+    //   @include sizezero;
+    //   margin-left: 10px;
+    //   color: $red;
+    // }
+    // span{
+    //   color: $darkblue;
+    // }
+    // p{
+    //   @include sizezero;
+    //   margin-left: 10px;
+    //   font-size:xx-small;
+    // }
   }
    .header-nav{
      @include displays;
