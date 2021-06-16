@@ -14,13 +14,16 @@
     grid-column: 1 / 4 ;
     grid-row: 1;
     // background-color: dodgerblue;
+    nav{
+      height:620px;
+      overflow: scroll;
+    }
     .body-ul-navbar-list{
       @include sizezero;
       list-style-type: none;
      font-size: $smallfont;
       font-weight: $thickfont;
-      height:630px;
-      overflow: scroll;
+
       li{
         cursor: pointer;
         padding: 10px 20px 10px 25px;
@@ -40,36 +43,61 @@
           position: relative;
           z-index: 1;
         }
-        .body-ul-navbar-list-gray{
-          @include sizezero;
-          list-style-type: none;
-          font-size: $smallfont;
-          font-weight: $thickfont;
-          color: $gray;
-          li{
-              cursor: pointer;
-              padding: 10px 40px 10px 0px;
-             i{
-              font-weight: $thickestfont;
-              font-size: $mediumsize;
-              color: $gray;
-              float: left;
-              margin-right: 5px;
-              }
-              a{
-                text-decoration: none;
-                color: $gray;
-              }
-          }
-        }
       }
       .body-ul-navbar-list-bluebackground{
-        background-color: $lightblue;
+        background-color: rgb(223, 229, 253);
         border-left: 3px solid $red;
         margin-bottom: 2px;
       }
     }
-      ul::-webkit-scrollbar {
+    .body-ul-navbar-list-gray{
+      @include sizezero;
+      list-style-type: none;
+      font-size: $smallfont;
+      font-weight: $thickfont;
+      color: $gray;
+      li{
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+          cursor: pointer;
+          padding: 10px 20px 10px 25px;
+         i{
+          font-weight: $thickestfont;
+          font-size: $mediumsize;
+          color: $gray;
+          float: left;
+          margin-right: 5px;
+          }
+          a{
+            text-decoration: none;
+            color: $gray;
+          }
+          .div1{
+            width: 2%;
+            margin-right: 11px;
+            i{
+          font-weight: $thickestfont;
+          font-size: $mediumsize;
+          color: $green;
+          // margin-left: 60px;
+          // float: right;
+          position: relative;
+          z-index: 0;
+        }
+        .ictop{
+          font-weight: $thickestfont;
+          font-size: $mediumsize;
+          top: -16px;
+          left: 4px;
+          position: relative;
+          z-index: 1;
+        }
+          }
+      }
+    }
+      nav::-webkit-scrollbar {
         display: none;
       }
   }
