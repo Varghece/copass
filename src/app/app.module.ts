@@ -17,6 +17,24 @@ import { RecentlycompletedComponent } from './assigned-crew/recentlycompleted/re
 import { AssignedtoMeComponent } from './assigned-crew/assignedto-me/assignedto-me.component';
 import { CreditDisbAuthComponent } from './credit-disb-auth/credit-disb-auth.component';
 import { ViewEditComponent } from './view-edit/view-edit.component';
+import { AddressProofComponent } from './address-proof/address-proof.component';
+import { MemberShipComponent } from './member-ship/member-ship.component';
+import { IncomeProofComponent } from './income-proof/income-proof.component';
+import { EmploymentComponent } from './employment/employment.component';
+import { BankComponent } from './bank/bank.component';
+import { ExistingLoanComponent } from './existing-loan/existing-loan.component';
+import { PropertyComponent } from './property/property.component';
+import { FirstQltyCheckComponent } from './view-edit/first-qlty-check/first-qlty-check.component';
+import { SecondQltyCheckComponent } from './view-edit/second-qlty-check/second-qlty-check.component';
+import { FinalQltyCheckComponent } from './view-edit/final-qlty-check/final-qlty-check.component';
+import { CustomerInteractionComponent } from './view-edit/customer-interaction/customer-interaction.component';
+import { VerificationProcessComponent } from './view-edit/verification-process/verification-process.component';
+import { ValidationSignoffComponent } from './view-edit/validation-signoff/validation-signoff.component';
+import { CunderWritingComponent } from './view-edit/cunder-writing/cunder-writing.component';
+import { CreditSanctionComponent } from './view-edit/credit-sanction/credit-sanction.component';
+import { LoanDocExeComponent } from './view-edit/loan-doc-exe/loan-doc-exe.component';
+import { LoanDocvalidSignoffComponent } from './view-edit/loan-docvalid-signoff/loan-docvalid-signoff.component';
+import { CreditDisburseComponent } from './view-edit/credit-disburse/credit-disburse.component';
 
 
 
@@ -33,7 +51,25 @@ import { ViewEditComponent } from './view-edit/view-edit.component';
     RecentlycompletedComponent,
     AssignedtoMeComponent,
     CreditDisbAuthComponent,
-    ViewEditComponent
+    ViewEditComponent,
+    AddressProofComponent,
+    MemberShipComponent,
+    IncomeProofComponent,
+    EmploymentComponent,
+    BankComponent,
+    ExistingLoanComponent,
+    PropertyComponent,
+    FirstQltyCheckComponent,
+    SecondQltyCheckComponent,
+    FinalQltyCheckComponent,
+    CustomerInteractionComponent,
+    VerificationProcessComponent,
+    ValidationSignoffComponent,
+    CunderWritingComponent,
+    CreditSanctionComponent,
+    LoanDocExeComponent,
+    LoanDocvalidSignoffComponent,
+    CreditDisburseComponent
   ],
   imports: [
     BrowserModule,

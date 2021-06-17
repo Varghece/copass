@@ -124,7 +124,7 @@
         </div>
         <div class="imgpre">
           <div class="imgbox">
-            <img src="./assets/aadaar.jfif" alt="customer image">
+            <img src="./assets/images/pan.jpg" alt="customer image">
           </div>
           <button>Preview <i class="pi pi-eye"></i></button>
         </div>
@@ -143,10 +143,10 @@
     <div class="btns">
       <div>
         <button class="sav">Save</button>
-        <button class="compt" type="submit">Complete</button>
+        <button class="compt" (click)="onCreate()" type="submit">Complete</button>
       </div>
       <button (click)="previous()">Previous</button>
-      <button>Next</button>
+      <button (click)="onCreate()">Next</button>
     </div>
   </div>
 
