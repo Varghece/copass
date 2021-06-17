@@ -17,9 +17,9 @@
         @include sizezero;
       }
       span{
-        color: $gray;
-        font-weight: $mediumfont ;
-        font-size: $mediumsize;
+        color: #818292;
+        font-weight: normal;
+        font-size: 16px;
       }
       .open{
         width: 25%;
@@ -211,19 +211,23 @@
        align-items:center;
        height: 50px;
        width:100% ;
-       h1,h4{
+       h1{
         @include sizezero;
         color:$darkblue;
        padding-top: 10px;
+      //  font-weight: bold;
+      //  font-size: 33px;
       }
        .bundle{
          display: flex;
          align-items: center;
          margin-top: 9px;
          h4{
+          @include sizezero;
           margin-top: -1px;
            margin-left: 5px;
            color: $gray;
+           padding-top: 10px;
          }
          i{
            margin-right: 5px;

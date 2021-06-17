@@ -6,12 +6,15 @@
   padding: 0;
   background-color: $white;
   min-height: 690px;
+  // min-height: 680px;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
+  // border-radius: 30px;
   box-shadow: 1px 0.9px 80px $lightgray;
   font-family: $fontfamily;
   font-size: $smallfont;
   font-weight: $mediumfont;
+  // margin-bottom: 10px;
   // background-color: rgb(248, 123, 65);
   // .header{
   //  width: 100%;
@@ -34,5 +37,5 @@
 .footer{
   width: 100%;
   background-color: $white;
-  height: 16px;
+  height: 20px;
 }
