@@ -724,6 +724,10 @@
       background-color: $red;
       @include button-common;
     }
+    .button-save{
+      background-color: $darkblue;
+      @include button-common;
+    }
 
   }
   .customer-details-boxes-container::-webkit-scrollbar {

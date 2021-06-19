@@ -107,7 +107,7 @@
 
   <!-- class customer-details-boxes1 for the details template-->
   <div class="customer-details-boxes-container">
-    <h2>Appraisal and Validation</h2>
+    <!-- <h2>Appraisal and Validation</h2> -->
     <!-- basic information temp -->
     <div id="Basic Information" class="customer-details-boxes">
       <h3>Basic Information</h3>
@@ -681,6 +681,36 @@
             <div class="customer-details-box-image-preview"><p>Preview <i class="pi pi-eye"></i></p></div>
       </div>
     </div>
+    <div class="verification">
+      <div class="verfied">
+        <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"><span class="vspn">verified</span></span>
+        </label>
+        <select name="" id="">
+          <option value="">Select</option>
+        </select>
+     </div>
+     <div class="err">
+      <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"><span class="vspn">Error</span></span>
+      </label>
+      <select name="" id="">
+        <option value="">Select Reason</option>
+      </select>
+      </div>
+      <div class="hold">
+        <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"><span class="vspn">Hold</span></span>
+        </label>
+        <select name="" id="">
+          <option value="">Select Reason</option>
+        </select>
+     </div>
+   </div>
+   <div><textarea>free text</textarea></div>
     </div>
     <!-- Property temp -->
     <div id="Property" class="customer-details-boxes">
@@ -742,7 +772,8 @@
    <div><textarea>free text</textarea></div>
     </div>
     <div >
-      <button type="submit" class="button-submit">Submit</button>
+      <button type="submit" class="button-save">Save</button>
+      <button type="submit" class="button-submit">Complete</button>
       <button type="button" class="button-referback">Refer Back</button>
     </div>
   </div>
