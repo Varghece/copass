@@ -1,3 +1,13 @@
+import { LoanDocvalidSignoffComponent } from './view-edit/loan-docvalid-signoff/loan-docvalid-signoff.component';
+import { LoanDocExeComponent } from './view-edit/loan-doc-exe/loan-doc-exe.component';
+import { CreditSanctionComponent } from './view-edit/credit-sanction/credit-sanction.component';
+import { CunderWritingComponent } from './view-edit/cunder-writing/cunder-writing.component';
+import { ValidationSignoffComponent } from './view-edit/validation-signoff/validation-signoff.component';
+import { VerificationProcessComponent } from './view-edit/verification-process/verification-process.component';
+import { CustomerInteractionComponent } from './view-edit/customer-interaction/customer-interaction.component';
+import { FinalQltyCheckComponent } from './view-edit/final-qlty-check/final-qlty-check.component';
+import { SecondQltyCheckComponent } from './view-edit/second-qlty-check/second-qlty-check.component';
+import { FirstQltyCheckComponent } from './view-edit/first-qlty-check/first-qlty-check.component';
 import { CreditDisbAuthComponent } from './credit-disb-auth/credit-disb-auth.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -17,6 +27,7 @@ import { AadharCardComponent } from './aadhar-card/aadhar-card.component';
 import { BasicInformarionComponent } from './basic-informarion/basic-informarion.component';
 import { NewCustomerComponent } from './new-customer/new-customer.component';
 import { AssignedCrewComponent } from './assigned-crew/assigned-crew.component';
+import { CreditDisburseComponent } from './view-edit/credit-disburse/credit-disburse.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'crew', pathMatch: 'full'},
@@ -40,8 +51,19 @@ const routes: Routes = [
     { path: 'property', component: PropertyComponent}
   ] },
   { path: 'view', component: ViewEditComponent, children: [
-    { path: '', redirectTo: 'cdauth',  pathMatch: 'full' },
-    {path: 'cdauth', component: CreditDisbAuthComponent},
+    { path: '', redirectTo: 'firstqty',  pathMatch: 'full' },
+    {path: 'firstqty', component: FirstQltyCheckComponent},
+    {path: 'secondqty', component: SecondQltyCheckComponent},
+    {path: 'finalqty', component: FinalQltyCheckComponent},
+    {path: 'custint', component: CustomerInteractionComponent},
+    {path: 'verpro', component: VerificationProcessComponent},
+    {path: 'valdsgn', component: ValidationSignoffComponent},
+    {path: 'cuw', component: CunderWritingComponent},
+    {path: 'csan', component: CreditSanctionComponent},
+    {path: 'loanexe', component: LoanDocExeComponent},
+    {path: 'loanvalid', component: LoanDocvalidSignoffComponent},
+    {path: 'cdis', component: CreditDisburseComponent},
+    {path: 'cdauth', component: CreditDisbAuthComponent}
   ]}
 ];
 

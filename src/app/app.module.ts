@@ -35,6 +35,7 @@ import { CreditSanctionComponent } from './view-edit/credit-sanction/credit-sanc
 import { LoanDocExeComponent } from './view-edit/loan-doc-exe/loan-doc-exe.component';
 import { LoanDocvalidSignoffComponent } from './view-edit/loan-docvalid-signoff/loan-docvalid-signoff.component';
 import { CreditDisburseComponent } from './view-edit/credit-disburse/credit-disburse.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 
 
@@ -69,7 +70,8 @@ import { CreditDisburseComponent } from './view-edit/credit-disburse/credit-disb
     CreditSanctionComponent,
     LoanDocExeComponent,
     LoanDocvalidSignoffComponent,
-    CreditDisburseComponent
+    CreditDisburseComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,

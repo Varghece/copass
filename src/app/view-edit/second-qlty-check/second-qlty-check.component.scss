@@ -7,7 +7,10 @@
   font-weight: $thickfont;
   height: 560px;
   overflow: auto;
-
+  h1{
+    color: $darkblue;
+    font-size: 28px;
+  }
   .blu-bx-ctnr{
     width: 100%;
     margin-bottom: 30px;
@@ -324,6 +327,61 @@
         width:100%;
         @include displays;
         // background-color: rgb(161, 207, 203);
+      }
+      .history{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        table{
+          width: 100%;
+          border-bottom:1px solid gray ;
+          margin-bottom: 20px;
+          tr{
+            height: 15px;
+          }
+          .tr1{
+            td{
+              border-right: 1px solid gray ;
+            }
+          }
+          td{
+            // background-color: rgb(214, 177, 196);
+            .roundd{
+              width:30px;
+              height: 30px;
+              background-color: rgb(221, 218, 220);
+              border-radius: 50%;
+            }
+
+            .button1{
+              @include sizezero;
+              color: $white;
+              width: 80px;
+              height: 25px;
+              border-radius: 5px;
+              margin-left: 15px;
+              border-style:none ;
+              font-size: $mediumsize;
+              outline: none;
+              background-color:$green ;
+            }
+            .button2{
+              @include sizezero;
+              color: $white;
+              width: 80px;
+              height: 25px;
+              border-radius: 5px;
+              margin-left: 15px;
+              border-style:none ;
+              font-size: $mediumsize;
+              outline: none;
+              background-color:$darkblue ;
+            }
+          }
+          .td1{display: flex;
+            flex-direction: row;
+          }
+        }
       }
       .customer-details-box-table{
         min-width: 40%;
