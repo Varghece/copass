@@ -89,6 +89,12 @@
         font-size: $smallfont;
         font-weight: $lightfont;
         display: flex;
+        .highlight1{
+          color: red;
+        }
+        .highlight2{
+          color: blue;
+        }
         .customer-brief-table-container{
           width: 33%;
           height: 100%;

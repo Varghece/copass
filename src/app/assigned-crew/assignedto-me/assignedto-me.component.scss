@@ -4,12 +4,14 @@
   flex-direction: row;
   @include displays;
   width: 100%;
-  height: 90px;
+  height: 104px;
   // background-color: rgb(241, 143, 143);
-  border-radius: 10px;
-  border-left: 1px solid rgb(238, 238, 238);
-  border-right: 1px solid rgb(238, 238, 238);
-  border-bottom: 2px solid rgb(238, 238, 238);
+  // border-radius: 10px;
+  // border-left: 1px solid rgb(238, 238, 238);
+  // border-right: 1px solid rgb(238, 238, 238);
+  // border-bottom: 2px solid rgb(238, 238, 238);
+  border-radius: 15px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
   margin-bottom: 2px;
   font-weight: $mediumfont;
   font-size: $smallfont;
@@ -22,12 +24,15 @@
       text-align: left;
       // border: 1px solid black;
       a{
-        color: rgb(35, 119, 228);
+        color: $color-07 ;
       }
       td{
         padding: 0;
         width: 12%;
-        color: $gray;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 300;
+        color: $color-05;
       }
       .pro{
         width: 16%;
@@ -45,18 +50,23 @@
       // border: 1px solid black;
       width: 100%;
       p{
-        font-size:x-small;
-        font-weight: $lightfont;
+        // font-size:x-small;
+        // font-weight: $lightfont;
         @include sizezero;
+        font-size: 12px;
+        font-weight: normal;
       }
       .assingne{
         color: $darkblue;
-        width: 30px;
-        height: 30px;
-        padding: 4px;
+        width: 40px;
+        height: 40px;
+        padding-top: 9px;
         border-radius: 50%;
-        font-weight: $thickestfont;
-        font-size: $smallfont;
+        // font-weight: $thickestfont;
+        // font-size: $smallfont;
+        font-family: Poppins;
+        font-size: 13px;
+        font-weight: 900;
         text-align: center;
         background-color: $skyblue;
       }
@@ -69,22 +79,26 @@
       // border: 1px solid black;
       width: 100%;
       progress{
-        margin-right: 8px;
+        // margin-right: 8px;
+        margin-left: 5px;
         -webkit-appearance: none;
-         width: 125px;
-         height:6px;
+        width: 141.9px;
+        height: 7.5px;
          overflow: hidden;
          &::-webkit-progress-bar{
            background:rgb(217, 230, 248) ;
-           border-radius: 25px;
+           border-radius: 35px;
          }
          &::-webkit-progress-value{
-           background: rgb(35, 119, 228);
-           border-radius: 25px;
+           background: $color-07;
+           border-radius: 35px;
          }
         }
       p{
         @include sizezero;
+        margin-left: 8px;
+        font-size: 14px;
+        font-weight: normal;
       }
     }
     .divwidt6{
@@ -94,10 +108,11 @@
       // border: 1px solid black;
       width: 100%;
       progress{
-        margin-right: 8px;
+        // margin-right: 8px;
+        margin-left: 5px;
         -webkit-appearance: none;
-         width: 125px;
-         height: 6px;
+        width: 141.9px;
+        height: 7.5px;
          overflow: hidden;
          &::-webkit-progress-bar{
            background:rgb(217, 230, 248) ;
@@ -110,6 +125,9 @@
         }
       p{
         @include sizezero;
+        margin-left: 8px;
+        font-size: 14px;
+        font-weight: normal;
       }
     }
     .divwidt4{
@@ -120,12 +138,13 @@
       width: 100%;
       h5{
         margin-left: 23px;
-        font-weight: $mediumfont;
-        font-size: $smallfont;
-        color: $red;
+        // font-weight: $mediumfont;
+        font-size: 16px;
+        font-weight: 300;
+        color: $color-04;
       }
       .newc{
-        color:rgb(35, 119, 228);
+        color:$color-07;
       }
     }
     .divwidt{
@@ -139,24 +158,30 @@
         padding-top: 2px;
         margin-left: 14px;
         color:$white;
-        font-weight:$lightfont ;
-        font-size:smaller;
+        // font-weight:$lightfont ;
+        // font-size:smaller;
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: normal;
         width: 70px;
        height: 20px;
        border-radius: 5px;
-       background-color: rgb(35, 119, 228);
+       background-color: $color-07 ;
       }
       .delay{
         padding-top: 2px;
         text-align: center;
         margin-left: 14px;
         color:$white;
-        font-weight:$lightfont ;
-        font-size:smaller;
+        // font-weight:$lightfont ;
+        // font-size:smaller;
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: normal;
         width: 70px;
        height: 20px;
        border-radius: 5px;
-       background-color: rgb(251, 61, 61);
+       background-color: $color-04;
       }
     }
     .divwidt2{
@@ -167,13 +192,17 @@
       justify-content:flex-end;
       align-items: center;
       svg{
-        margin-right: 20px;
-        width: 13px;
+        margin-right: 34px;
+        // width: 13px;
+        width: 16.4px;
+        height: 23.5px;
       }
       .s{
         svg{
-          margin-right: 20px;
-          width: 19px;
+          margin-right: 34px;
+          width: 23.5px;
+          height: 16.4px;
+          // width: 19px;
         }
       }
       // i{
@@ -189,13 +218,16 @@
       //   color: red;
       // }
       button{
-        color:$darkblue;
-       font-weight: $thickfont ;
-        font-size: small;
-       width: 90px;
-      height: 25px;
-      border-radius: 8px;
-      border: 1px solid $darkblue;
+        color:$color-01;
+      //  font-weight: $thickfont ;
+      //   font-size: small;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: normal;
+       width: 105px;
+      height: 32px;
+      border-radius: 11px;
+      border: 1px solid $color-01;
       background-color: $white;
       outline: none;
      }

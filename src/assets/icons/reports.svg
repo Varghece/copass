@@ -1,12 +1,20 @@
-<svg id="profit-report_2_" data-name="profit-report (2)" xmlns="http://www.w3.org/2000/svg" width="18.699" height="24.932" viewBox="0 0 18.699 24.932">
-  <g id="Group_164" data-name="Group 164" transform="translate(12.466)">
-    <g id="Group_163" data-name="Group 163">
-      <path id="Path_244" data-name="Path 244" d="M320,0V6.233h6.233Z" transform="translate(-320)" fill="#acadb2"/>
-    </g>
-  </g>
-  <g id="Group_166" data-name="Group 166">
-    <g id="Group_165" data-name="Group 165">
-      <path id="Path_245" data-name="Path 245" d="M76.466,7.791a1.561,1.561,0,0,1-1.558-1.558V0H65.558A1.561,1.561,0,0,0,64,1.558V23.373a1.56,1.56,0,0,0,1.558,1.558H81.14A1.559,1.559,0,0,0,82.7,23.373V7.791ZM70.233,21.815H67.116V17.14h3.116Zm4.675,0H71.791V14.024h3.116Zm4.675,0H76.466V10.908h3.116Z" transform="translate(-64)" fill="#acadb2"/>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="profit-report_2_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 18.7 24.9" style="enable-background:new 0 0 18.7 24.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#8F8F8F;}
+</style>
+<g id="Group_164" transform="translate(12.466)">
+	<g id="Group_163">
+		<path id="Path_244" class="st0" d="M0,0v6.2h6.2L0,0z"/>
+	</g>
+</g>
+<g id="Group_166">
+	<g id="Group_165">
+		<path id="Path_245" class="st0" d="M12.5,7.8c-0.9,0-1.6-0.7-1.6-1.6V0H1.6C0.7,0,0,0.7,0,1.6v21.8c0,0.9,0.7,1.6,1.6,1.6h15.6
+			c0.9,0,1.6-0.7,1.6-1.6V7.8H12.5z M6.2,21.8H3.1v-4.7h3.1L6.2,21.8z M10.9,21.8H7.8V14h3.1L10.9,21.8z M15.6,21.8h-3.1V10.9h3.1
+			L15.6,21.8z"/>
+	</g>
+</g>
 </svg>

@@ -1,6 +1,8 @@
 @import "src/styles.scss";
 .bodyy{
   display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 .main{
   width: 95%;
@@ -8,8 +10,9 @@
 .sidebar{
   margin: 0;
   padding: 0;
-   width:5%;
-  border-right: 1px solid $lightgray;
+  width: 97px;
+   max-height: 736px;
+  border-right: 1px solid $color-12;
   // background-color: chocolate;
   .sidebarul{
     @include sizezero;
@@ -18,10 +21,22 @@
     margin-top: 40px;
     li{    display: flex;
           cursor: pointer;
-          padding: 15px 20px 15px 25px;
-          font-weight: $mediumfont;
-          font-size: $smallfont;
-          color:$gray;
+          // padding: 15px 20px 15px 25px;
+          // font-weight: $mediumfont;
+          // font-size: $smallfont;
+          // padding-left: 20px;
+          // padding-top: 3px;
+          // padding-bottom: 3px;
+          font-weight:Light;
+          font-size: 16px;
+          color:$color-06;
+          a{
+            padding: 15px 5px 15px 30px;
+            width: 100%;
+           text-decoration: none;
+           display: flex;
+          //  background-color: yellowgreen;
+           }
           p{
             font-size: 1px;
             visibility:hidden;
@@ -38,8 +53,8 @@
           //   color: $gray;
           // }
      }
-     li:hover{
-       color: $darkblue;
+     li:hover,.active{
+       color:$color-01;
        border-left: 3px solid #191992;
        background-image: linear-gradient(to right, rgb(192, 189, 243), rgb(255, 255, 255));
       //  i{
@@ -48,7 +63,7 @@
       #iconfinder_home_126572 ,#Path_236,#Path_237,#Path_238,
       #iconfinder_Movies_and_Entertainment_movie_premiere_queue_film_6611441,
       #Path_244,#Path_245,#Path_391,#Path_246,#Path_249,#Path_247,#Path_248{
-        fill: $darkblue;
+        fill: $color-01;
      }
      }
   }
@@ -56,11 +71,13 @@
 }
 .main1{
   width: 86%;
+  box-sizing: border-box;
 }
 .sidebar1{
-  width:14%;
+  width: 270px;;
   // background-color: rgb(181, 235, 181);
-  border-right: 1px solid $lightgray;
+  border-right: 1px solid $color-12;
+  max-height: 736px;
   .sidebarul{
     @include sizezero;
     list-style-type: none;
@@ -68,14 +85,22 @@
     margin-top: 40px;
     li{    display: flex;
           cursor: pointer;
-          padding: 15px 20px 15px 35px;
-          font-weight: $mediumfont;
-          font-size: $smallfont;
-          color:$gray;
+          // padding: 15px 20px 15px 35px;
+          // font-weight: $mediumfont;
+          // font-size: $smallfont;
+          padding-left: 20px;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          font-weight:Light;
+          font-size: 16px;
+          color: $color-06;
           a{
+            padding: 15px 5px 15px 20px;
+            width: 100%;
            text-decoration: none;
            display: flex;
-           color: $gray;
+           color: $color-06;
+          //  background-color: yellowgreen;
            p{
             visibility: visible;
             margin: 0;
@@ -93,8 +118,9 @@
           }
 
      }
-     li:hover{
-       color: $darkblue;
+
+     li:hover,.active{
+       color: $color-01;
        border-left: 3px solid #191992;
        background-image: linear-gradient(to right, rgb(192, 189, 243), rgb(255, 255, 255));
        p{
@@ -103,7 +129,7 @@
       #iconfinder_home_126572 ,#Path_236,#Path_237,#Path_238,
       #iconfinder_Movies_and_Entertainment_movie_premiere_queue_film_6611441,
       #Path_244,#Path_245,#Path_391,#Path_246,#Path_249,#Path_247,#Path_248{
-        fill: $darkblue;
+        fill: $color-01;
      }
       //  i{
       //   color: $darkblue;

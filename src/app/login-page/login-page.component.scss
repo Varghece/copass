@@ -3,10 +3,9 @@
   display: flex;
   flex-direction: row;
   min-width: 100%;
-  // box-sizing: border-box;
   margin: 0px;
   padding: 0;
-  background-color: $white;
+  background-color: white;
   height: 690px;
   .imagebox{
     width: 50%;
@@ -19,10 +18,10 @@
       position: relative;
     }
     h1{
-      width: 42%;
-      font-weight: bold;
-      color: #11142D;
-      font-size: 32px;
+      width: 50%;
+      font-weight: ExtraBold;
+      color: $color-03;
+      font-size: 38px;
       // background-color: rgb(228, 237, 100);
       left: 120px;
       top: -470px;
@@ -34,52 +33,73 @@
     width: 50%;
     height: 100%;
     // background-color: rgb(228, 237, 100);
-    padding: 150px;
+    padding: 130px;
+    box-sizing: border-box;
 
       display: flex;
       flex-direction: column;
-      // width:70%;
-      // height: 50%;
-      //  background-color: rgb(127, 237, 100);
+      //background-color: rgb(127, 237, 100);
        .divs{
          margin-top:  25px;
        }
       img{
-        width: 130px;
-        height: 40px;
+        // width: 130px;
+        // height: 40px;
+        width: 151px;
+        height: 48px;
       }
       h1{
         @include sizezero;
-        font-size: 26px;
+        // font-size: 26px;
+        font-weight: ExtraBold;
+        font-size: 30px;
+        color: $color-03;
         span{
-          border-bottom: 2px solid red;
+          border-bottom: 2px solid $color-04;
         }
       }
-      p{
+      h3{
         @include sizezero;
+        font-weight: Regular;
+        font-size: 22px;
+        color: $color-03;
+      }
+      p{
+        font-weight: Light;
+        font-size: 18px ;
+        color: $color-03 ;
+        // margin-right: 40px;
+        float: right;
       }
       input{
-        font-weight:lighter;
-        font-size: 20px;
-        width: 330px;
+        font-weight: ExtraLight ;
+        font-size: 21px;
+        // width: 330px;
         height: 50px;
+        color: $color-05;
+        width: 462px;
         border: none;
         outline: none;
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid $color-06 ;
       }
       button{
 
-        width: 320px;
-        height: 40px;
+        // width: 320px;
+        // height: 40px;
+        width: 464px;
+        height: 55px;
         color: $white;
-      border-radius: 10px;
+        border-radius: 10px;
       // margin: 10px;
-      border-style:none ;
-      font-size: $mediumsize;
-      outline: none;
-      background-color: $darkblue;
+        border-style:none ;
+        font-size: 21px;
+        font-weight: ExtraLight ;
+        outline: none;
+        background-color: $color-01;
       }
-
+      button:hover{
+        background-color: $color-02;
+      }
 
   }
 }
