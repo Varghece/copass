@@ -27,18 +27,20 @@
     .body-ul-navbar-list{
       @include sizezero;
       list-style-type: none;
-     font-size: $smallfont;
-      font-weight: $thickfont;
-
       li{
+        color: $color-03;
         width: 100%;
         display: flex;
         flex-direction: row;
+        align-items: center;
         cursor: pointer;
         // padding: 10px 20px 0px 25px;
         height: 66px;
         // background-color: yellowgreen;
-        border: 1px solid black;
+        // border: 1px solid black;
+        font-family: Poppins;
+        font-size: 16px;
+         font-weight: normal;
         // i{
         //   font-weight: $thickestfont;
         //   font-size: $mediumsize;
@@ -56,37 +58,49 @@
         //   z-index: 1;
         // }
         p{
-          width: 70%;
-          border: 1px solid black;
+          padding: 0;
+          padding-left: 35px;
+          margin: 0;
+          width: 78%;
+          // border: 1px solid black;
         }
         div{
-          width: 8%;
-          border: 1px solid black;
+          width: 7%;
+          // border: 1px solid black;
         }
       }
       .body-ul-navbar-list-bluebackground{
+        color: $color-01;
         background-color: $color-10;
         border-left: 3px solid $red;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
         // margin-bottom: 2px;
       }
       .listy{
         background-color: $color-10;
+        color: $color-01;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
       }
     }
     .body-ul-navbar-list-gray{
       @include sizezero;
       list-style-type: none;
-      font-size: $smallfont;
-      font-weight: $thickfont;
-      color: $gray;
       li{
-        // width: 100%;
-        // display:flex;
-        // flex-direction: row;
-        // justify-content:space-between;
-         border: 1px solid black;
+        color: $color-05;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        //  border: 1px solid black;
           height: 66px;
           cursor: pointer;
+          font-family: Poppins;
+        font-size: 16px;
+         font-weight: normal;
           // padding: 10px 20px 10px 25px;
         //  i{
         //   font-weight: $thickestfont;
@@ -99,27 +113,25 @@
         //     text-decoration: none;
         //     color: $gray;
         //   }
-          .div1{
-            width: 2%;
-            margin-right: 11px;
-        //     i{
-        //   font-weight: $thickestfont;
-        //   font-size: $mediumsize;
-        //   color: $green;
-        //   // margin-left: 60px;
-        //   // float: right;
-        //   position: relative;
-        //   z-index: 0;
-        // }
-        // .ictop{
-        //   font-weight: $thickestfont;
-        //   font-size: $mediumsize;
-        //   top: -16px;
-        //   left: 4px;
-        //   position: relative;
-        //   z-index: 1;
-        // }
+        .slider{
+          width: 14%;
+          padding-left: 35px;
+          svg{
+            width: 7.7px;
+             height: 12.5px;
           }
+        }
+        p{
+          padding: 0;
+          padding-left: 35px;
+          margin: 0;
+          width: 65%;
+          // border: 1px solid black;
+        }
+        div{
+          width: 7%;
+          // border: 1px solid black;
+        }
       }
     }
       nav::-webkit-scrollbar {
