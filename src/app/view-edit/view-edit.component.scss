@@ -148,16 +148,21 @@
     // margin: 0;
     box-sizing: border-box;
     // max-width: 1361px;
+    padding-left: 44px;
     padding-bottom: 20px;
     ul{
       padding: 0;
     margin: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 31px;
+    margin-bottom: 25px;
      list-style-type: none;
-    font-size: $smallfont;
-     font-weight: $mediumfont;
+    // font-size: $smallfont;
+    //  font-weight: $mediumfont;
     //  padding-left: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    color: $color-05;
      li{
       display: inline;
       cursor: pointer;
