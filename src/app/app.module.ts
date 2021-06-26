@@ -36,6 +36,7 @@ import { LoanDocExeComponent } from './view-edit/loan-doc-exe/loan-doc-exe.compo
 import { LoanDocvalidSignoffComponent } from './view-edit/loan-docvalid-signoff/loan-docvalid-signoff.component';
 import { CreditDisburseComponent } from './view-edit/credit-disburse/credit-disburse.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { FtestComponent } from './ftest/ftest.component';
 
 
 
@@ -71,7 +72,8 @@ import { LoginPageComponent } from './login-page/login-page.component';
     LoanDocExeComponent,
     LoanDocvalidSignoffComponent,
     CreditDisburseComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    FtestComponent
   ],
   imports: [
     BrowserModule,
